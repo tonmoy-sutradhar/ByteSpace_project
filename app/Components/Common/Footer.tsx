@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/Footer/footer.png";
+import logo from "../../../app/assets/Footer/Futterlogo.png";
 import { footerColumns, legalLinks } from "@/app/config/footer";
 import NewsletterForm from "./NewsletterForm";
 
