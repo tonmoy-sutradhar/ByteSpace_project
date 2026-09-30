@@ -1,5 +1,19 @@
+import Hero from "@/app/Components/Home/Hero";
+import LogoStrip from "../Components/Home/LogoStrip";
+import DiscoverCourses from "../Components/Home/DiscoverCourses";
+import LearningPaths from "../Components/Home/LearningPaths";
+import GrowthAndCreate from "../Components/Home/GrowthAndCreate";
+
 export default function Page() {
-  return <section className="bg-grid h-[600px]" />;
+  return (
+    <>
+      <Hero />
+      <LogoStrip />
+      <DiscoverCourses />
+      <LearningPaths />
+      <GrowthAndCreate />
+    </>
+  );
 }
 
 // // app/(main)/page.tsx
