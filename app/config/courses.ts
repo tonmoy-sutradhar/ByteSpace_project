@@ -75,3 +75,8 @@ export const courses: Course[] = [
     image: startup,
   },
 ];
+
+export const allCourses: Course[] = Array.from({ length: 18 }, (_, i) => ({
+  ...courses[i % courses.length],
+  id: String(i + 1),
+}));

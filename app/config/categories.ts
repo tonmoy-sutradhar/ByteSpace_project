@@ -19,3 +19,15 @@ export const courseCategories = [
   "Cooking",
   "+ More",
 ];
+
+export const searchCategories = [
+  "Featured",
+  "Music",
+  "Drawing & Painting",
+  "Marketing",
+  "Animation",
+  "Social Media",
+  "UI/UX Design",
+  "Creative Marketing",
+  "Cooking",
+];
