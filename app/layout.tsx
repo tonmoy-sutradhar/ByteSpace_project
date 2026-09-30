@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Outfit } from "next/font/google";
+import { Outfit, Poppins } from "next/font/google";
 import "./globals.css";
 import Providers from "@/app/redux/providers";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -17,8 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.variable} antialiased`}>
+    <html lang="en">
+      <body className={`${outfit.variable} ${poppins.variable} antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -1,8 +1,12 @@
-// app/(main)/page.tsx
-import React from "react";
+export default function Page() {
+  return <section className="bg-grid h-[600px]" />;
+}
 
-const page = () => {
-  return <div className="p-4 text-7xl text-blue-600">hello</div>;
-};
+// // app/(main)/page.tsx
+// import React from "react";
 
-export default page;
+// const page = () => {
+//   return <div className="p-4 text-7xl text-blue-600">hello</div>;
+// };
+
+// export default page;
