@@ -3,6 +3,8 @@ import LogoStrip from "../Components/Home/LogoStrip";
 import DiscoverCourses from "../Components/Home/DiscoverCourses";
 import LearningPaths from "../Components/Home/LearningPaths";
 import GrowthAndCreate from "../Components/Home/GrowthAndCreate";
+import CreatorCta from "../Components/Home/CreatorCta";
+import Testimonials from "../Components/Home/Testimonials";
 
 export default function Page() {
   return (
@@ -12,6 +14,8 @@ export default function Page() {
       <DiscoverCourses />
       <LearningPaths />
       <GrowthAndCreate />
+      <CreatorCta />
+      <Testimonials />
     </>
   );
 }
