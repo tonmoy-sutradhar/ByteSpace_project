@@ -1,3 +1,4 @@
+// app/Components/Course/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import Container from "@/app/Components/Common/Container";
 import CourseHero from "@/app/Components/Course/CourseHero";
@@ -35,7 +36,11 @@ export default async function CourseDetailPage({ params }: PageProps) {
       <div className="relative z-10 pb-16 pt-10 lg:-mt-[541px] lg:pb-[66px] lg:pt-0">
         <Container className="grid gap-10 lg:grid-cols-[724px_412px] lg:items-start lg:justify-between">
           <div>
-            <CourseVideo />
+            {/* <CourseVideo /> */}
+            <CourseVideo
+              videoId={courses.find((c) => c.slug === slug)!.youtubeId}
+              title={courseDetail.title}
+            />
             <div className="mt-10 lg:mt-[125px]">
               <CourseTabs tabs={tabs} />
             </div>

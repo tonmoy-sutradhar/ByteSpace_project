@@ -1,3 +1,4 @@
+// app/(main)/courses/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import Container from "@/app/Components/Common/Container";
 import CourseHero from "@/app/Components/Course/CourseHero";

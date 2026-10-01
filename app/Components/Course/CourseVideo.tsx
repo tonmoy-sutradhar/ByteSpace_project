@@ -1,3 +1,4 @@
+// src/app/Components/Course/CourseVideo.tsx
 "use client";
 
 import Image from "next/image";
